@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@astrojs/node": "^8.3.3",
-    "astro": "0.0.0-si-get-20240815175345",
+    "astro": "4.15.6",
     "astro-compress": "^2.3.1",
     "sharp": "^0.33.3"
   },
