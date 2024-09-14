@@ -1,13 +1,13 @@
 ---
 import { Image } from 'astro:assets'
-import userImg from '../images/user.avif'
-import mainProductImg from '../images/islands/thailand.avif'
-import RoomAvailability from '../components/RoomAvailability.astro'
-import RecommendedProducts from '../components/RecommendedProducts.astro'
-import CustomerReviews from '../components/CustomerReviews.astro'
-import Stars from '../components/Stars.astro'
-import AddToCart from '../components/AddToCart'
-import CartCount from '../components/CartCount.astro'
+import userImg from '../../images/user.avif'
+import mainProductImg from '../../images/islands/thailand.avif'
+import RoomAvailability from '../../components/RoomAvailability.astro'
+import RecommendedProducts from '../../components/RecommendedProducts.astro'
+import CustomerReviews from '../../components/CustomerReviews.astro'
+import Stars from '../../components/Stars.astro'
+import AddToCart from '../../components/AddToCart'
+import CartCount from '../../components/CartCount.astro'
 
 const title = 'Astro Server Islands'
 const description = 'A demo of Astro with Server Islands.'
@@ -452,7 +452,7 @@ const description = 'A demo of Astro with Server Islands.'
 								</CustomerReviews>
 							</div>
 						</footer>
-						<!-- without parent div, but this page not minify, so it should works fine -->
+						<!-- without parent div, it will remove previously node!!! -->
 						<CustomerReviews server:defer />
 					</div>
 				</div>
